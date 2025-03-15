@@ -7,8 +7,8 @@ import com.skilldistillery.animals.entities.SpiderMonkey;
 import com.skilldistillery.animals.entities.Tarsier;
 
 public class AnimalSanctuaryApp {
-	Sanctuary sanctuary = new Sanctuary();
-	Scanner kb = new Scanner(System.in);
+	private Sanctuary sanctuary = new Sanctuary();
+	private Scanner kb = new Scanner(System.in);
 
 	public static void main(String[] args) {
 		AnimalSanctuaryApp app = new AnimalSanctuaryApp();
@@ -30,6 +30,10 @@ public class AnimalSanctuaryApp {
 					continue;
 				}
 				case "2": case "Add": {
+					if (!sanctuary.checkVacancy()) {
+						System.out.println("Sorry friend, but we don't currently have any empty enclosures!");
+						break;
+					}
 					System.out.println("We would love to have your friend stay here! Please give us their name and species!");
 					System.out.println("Name:");
 					String name = kb.next();
