@@ -50,5 +50,10 @@ public class Sanctuary {
 		}
 		return enclosureFull;
 	}
-}
 
+	public void startAttendantRounds() {
+		attendant.makeRounds(animals);
+	}
+
+
+}
