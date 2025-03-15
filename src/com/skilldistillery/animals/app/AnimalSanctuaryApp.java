@@ -77,13 +77,7 @@ public class AnimalSanctuaryApp {
 			}
 		}
 		kb.close();
-		// TODO Instantiate a Sanctuary -done
-		// TODO Instantiate an Attendant -done
-		// TODO Add Attendant to Sanctuary -done
-		// TODO Create and add Animals to Sanctuary - done
-		// TODO Tell Sanctuary to start Attendant rounds - done
 	}
-		
 		
 	public void printGreeting() {
 		        System.out.println("\t\t****************************************");
@@ -101,5 +95,4 @@ public class AnimalSanctuaryApp {
 		        System.out.println("\t\t                🦍 🦍");
 	}
 		    
-
 }
