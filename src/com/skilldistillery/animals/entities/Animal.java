@@ -2,6 +2,7 @@ package com.skilldistillery.animals.entities;
 
 public class Animal {
 	private String name;
+	private String favoriteFood;
 	private String species;
 
 	public String getSpecies() {
@@ -27,4 +28,13 @@ public class Animal {
 	public void eat(int amount) {
 		System.out.println("I am eating " + amount + " foods");
 	}
+
+	public String getFavoriteFood() {
+		return favoriteFood;
+	}
+
+	public void setFavoriteFood(String favoriteFood) {
+		this.favoriteFood = favoriteFood;
+	}
+
 }

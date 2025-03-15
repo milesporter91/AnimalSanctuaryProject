@@ -15,9 +15,9 @@ public class Sanctuary {
 	
 	public void listAnimals() {
 		for (int i = 0; i < animals.length; i++) {
-			if (! animals[i].equals(null)) {
+			if (animals[i] != null) {
 				System.out.println("This here is " + animals[i].getName() + ", a " 
-			+ animals[i].getSpecies() + "!");
+			+ animals[i].getClass().getSimpleName() + "!");
 			}
 			else {
 				System.out.println("This enclosure is empty for now, but we're always "
@@ -28,12 +28,12 @@ public class Sanctuary {
 
 	public void addAnimal(Animal animal) {
 		checkVacancy();
-		if (enclosureFull = true) {
+		if (enclosureFull == true) {
 			System.out.println("Sorry friend, but we don't "
 					+ "currently have any empty enclosures!");
 		} else {
 			for (int i = 0; i < animals.length; i++) {
-				if (animals[i].equals(null)) {
+				if (animals[i] == null) {
 					animals[i] = animal;
 					int enclosureNumber = i + 1;
 					System.out.println("We got space for " + animal.getName() + " in enclosure #" 
@@ -46,7 +46,7 @@ public class Sanctuary {
 		
 	public boolean checkVacancy() {
 		for (int i = 0; i < animals.length; i++) {
-			if (animals[i].equals(null)) {
+			if (animals[i] == null) {
 				enclosureFull = false;
 				break;
 			}

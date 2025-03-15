@@ -1,14 +1,14 @@
 package com.skilldistillery.animals.entities;
 
 public class SilverbackGorilla extends Animal {
-	private static String species = "Silverback Gorilla";
 	private static String noise = "THUMP THUMP THUMP \n HOO HOO HOO";
+	private String favoriteFood = "bamboo shoots";
 	
-	
+	// SilverbackGorilla greg = new SilverbackGorilla("Greg", "Silverback Gorilla")
 	
 	
 	public SilverbackGorilla(String name) {
-		super();
+//		super();
 		setName(name);
 	}
 	@Override
@@ -17,10 +17,14 @@ public class SilverbackGorilla extends Animal {
 	}
 	@Override
 	public void eat(int amount) {
-		System.out.println("HOO HOO *eating " + amount + " bamboo shoots* HOO HOO");
+		System.out.println("HOO HOO *eating " + amount + " " + favoriteFood + "* HOO HOO");
 	}
-	public String getSpecies() {
-		return species;
+	public String getFavoriteFood() {
+		return favoriteFood;
+	}
+
+	public void setFavoriteFood(String favoriteFood) {
+		this.favoriteFood = favoriteFood;
 	}
 	
 	

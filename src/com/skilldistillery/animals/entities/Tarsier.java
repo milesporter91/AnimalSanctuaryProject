@@ -1,8 +1,8 @@
 package com.skilldistillery.animals.entities;
 
 public class Tarsier extends Animal {
-	private static String species = "Tarsier";
 	private static String noise = "Wheeeeeeeet!";
+	private String favoriteFood = "grasshoppers";
 	
 	public Tarsier(String name) {
 		super();
@@ -15,9 +15,13 @@ public class Tarsier extends Animal {
 	}
 	@Override
 	public void eat(int amount) {
-		System.out.println("Tseep! *eating " + amount + " grasshoppers* Tseep!");
+		System.out.println("Tseep! *eating " + amount + " " + favoriteFood + "* Tseep!");
 	}
-	public String getSpecies() {
-		return species;
+	public String getFavoriteFood() {
+		return favoriteFood;
+	}
+
+	public void setFavoriteFood(String favoriteFood) {
+		this.favoriteFood = favoriteFood;
 	}
 }

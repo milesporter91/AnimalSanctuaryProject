@@ -7,9 +7,10 @@ import com.skilldistillery.animals.entities.SpiderMonkey;
 import com.skilldistillery.animals.entities.Tarsier;
 
 public class AnimalSanctuaryApp {
+	Sanctuary sanctuary = new Sanctuary();
+	Scanner kb = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		Sanctuary sanctuary;
 		AnimalSanctuaryApp app = new AnimalSanctuaryApp();
 		app.launchApp();
 	}
@@ -17,8 +18,6 @@ public class AnimalSanctuaryApp {
 	private void launchApp() {
 		boolean sanctuaryTour = true;
 		String guestDecision;
-		Sanctuary sanctuary = new Sanctuary();
-		Scanner kb = new Scanner(System.in);
 		printGreeting();
 		while (sanctuaryTour) {
 			System.out.println("What can we do for you today?");
@@ -74,7 +73,7 @@ public class AnimalSanctuaryApp {
 		// TODO Instantiate an Attendant -done
 		// TODO Add Attendant to Sanctuary -done
 		// TODO Create and add Animals to Sanctuary - done
-		// TODO Tell Sanctuary to start Attendant rounds
+		// TODO Tell Sanctuary to start Attendant rounds - done
 	}
 		
 		

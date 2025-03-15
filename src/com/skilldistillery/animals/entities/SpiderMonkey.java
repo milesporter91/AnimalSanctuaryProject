@@ -1,9 +1,8 @@
 package com.skilldistillery.animals.entities;
 
 public class SpiderMonkey extends Animal {
-	private static String species = "Spider Monkey";
 	private static String noise = "EEK AHH AHH EEK!";
-	
+	private  String favoriteFood = "mangos";
 	
 	public SpiderMonkey(String name) {
 		super();
@@ -16,12 +15,15 @@ public class SpiderMonkey extends Animal {
 	}
 	@Override
 	public void eat(int amount) {
-		System.out.println("Ch-ch-ch-ch-ch *eating " + amount + " mangos* Ch-ch-ch-ch-ch");
-	}
-	public String getSpecies() {
-		return species;
+		System.out.println("Ch-ch-ch-ch-ch *eating " + amount + " " + favoriteFood + "* Ch-ch-ch-ch-ch");
 	}
 	
-	
+	public String getFavoriteFood() {
+		return favoriteFood;
+	}
+
+	public void setFavoriteFood(String favoriteFood) {
+		this.favoriteFood = favoriteFood;
+	}
 	
 }
