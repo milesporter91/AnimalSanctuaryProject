@@ -23,10 +23,14 @@ public class Animal {
 	
 	public void makeNoise() {
 		System.out.println("**crickets**");
+		System.out.println("***********INTERCOM ALARM*************");
+		System.out.println("******THIS IS A RESTRICTED AREA*******");
+		System.out.println("************TURN AROUND***************");
+		System.out.println("************IMMEDIATELY***************");
 	}
 	
 	public void eat(int amount) {
-		System.out.println("I am eating " + amount + " foods");
+		System.out.println("Specimen#67924 is eating " + amount + " food items");
 	}
 
 	public String getFavoriteFood() {

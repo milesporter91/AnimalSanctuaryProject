@@ -4,9 +4,6 @@ public class SilverbackGorilla extends Animal {
 	private static String noise = "THUMP THUMP THUMP \n HOO HOO HOO";
 	private String favoriteFood = "bamboo shoots";
 	
-	// SilverbackGorilla greg = new SilverbackGorilla("Greg", "Silverback Gorilla")
-	
-	
 	public SilverbackGorilla(String name) {
 //		super();
 		setName(name);

@@ -14,13 +14,16 @@ public class Sanctuary {
 
 	public void listAnimals() {
 		for (int i = 0; i < animals.length; i++) {
+			int enclosureNumber = i +1;
 			if (animals[i] != null) {
 				System.out.println(
 						"This here is " + animals[i].getName() + ", a " + animals[i].getClass().getSimpleName() + "!");
+				System.out.println();
 			} else {
 				System.out.println(
-						"This enclosure is empty for now, but we're always " 
+						"Enclosure #" + enclosureNumber + " is empty for now, but we're always " 
 				+ "lookin to help more animals in need!");
+				System.out.println();
 			}
 		}
 	}
@@ -33,6 +36,7 @@ public class Sanctuary {
 					int enclosureNumber = i + 1;
 					System.out.println("We got space for " + animal.getName() + " in enclosure #" + enclosureNumber
 							+ "! Feel free to check in anytime!");
+					System.out.println();
 					break;
 				}
 			}
