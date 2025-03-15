@@ -1,9 +1,14 @@
 package com.skilldistillery.animals.entities;
 
 public class SpiderMonkey extends Animal {
-	private String species = "Spider Monkey";
+	private static String species = "Spider Monkey";
 	private static String noise = "EEK AHH AHH EEK!";
 	
+	
+	public SpiderMonkey(String name) {
+		super();
+		setName(name);
+	}
 	
 	@Override
 	public void makeNoise() {
@@ -15,9 +20,6 @@ public class SpiderMonkey extends Animal {
 	}
 	public String getSpecies() {
 		return species;
-	}
-	public void setSpecies(String species) {
-		this.species = species;
 	}
 	
 	

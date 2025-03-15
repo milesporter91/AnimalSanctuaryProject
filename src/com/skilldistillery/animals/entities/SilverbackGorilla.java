@@ -1,10 +1,16 @@
 package com.skilldistillery.animals.entities;
 
 public class SilverbackGorilla extends Animal {
-	private String species = "Silverback Gorilla";
+	private static String species = "Silverback Gorilla";
 	private static String noise = "THUMP THUMP THUMP \n HOO HOO HOO";
 	
 	
+	
+	
+	public SilverbackGorilla(String name) {
+		super();
+		setName(name);
+	}
 	@Override
 	public void makeNoise() {
 		System.out.println(noise);
@@ -15,9 +21,6 @@ public class SilverbackGorilla extends Animal {
 	}
 	public String getSpecies() {
 		return species;
-	}
-	public void setSpecies(String species) {
-		this.species = species;
 	}
 	
 	

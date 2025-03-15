@@ -1,10 +1,14 @@
 package com.skilldistillery.animals.entities;
 
 public class Tarsier extends Animal {
-	private String species = "Tarsier";
+	private static String species = "Tarsier";
 	private static String noise = "Wheeeeeeeet!";
 	
-	
+	public Tarsier(String name) {
+		super();
+		setName(name);
+	}
+		
 	@Override
 	public void makeNoise() {
 		System.out.println(noise);
@@ -15,8 +19,5 @@ public class Tarsier extends Animal {
 	}
 	public String getSpecies() {
 		return species;
-	}
-	public void setSpecies(String species) {
-		this.species = species;
 	}
 }

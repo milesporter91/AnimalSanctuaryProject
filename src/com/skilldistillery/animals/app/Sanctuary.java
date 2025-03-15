@@ -1,4 +1,7 @@
-package com.skilldistillery.animals.entities;
+package com.skilldistillery.animals.app;
+
+import com.skilldistillery.animals.entities.Animal;
+import com.skilldistillery.animals.entities.Attendant;
 
 public class Sanctuary {
 	
